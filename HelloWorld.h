@@ -15,6 +15,30 @@ extern "C" {
 JNIEXPORT void JNICALL Java_HelloWorld_print
   (JNIEnv *, jobject, jint, jstring, jintArray);
 
+/*
+ * Class:     HelloWorld
+ * Method:    printv2
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_HelloWorld_printv2
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     HelloWorld
+ * Method:    getAgeFromC
+ * Signature: (LEmployee;)I
+ */
+JNIEXPORT jint JNICALL Java_HelloWorld_getAgeFromC
+  (JNIEnv *, jclass, jobject);
+
+/*
+ * Class:     HelloWorld
+ * Method:    createWithAge
+ * Signature: (I)LEmployee;
+ */
+JNIEXPORT jobject JNICALL Java_HelloWorld_createWithAge
+  (JNIEnv *, jobject, jint);
+
 #ifdef __cplusplus
 }
 #endif
