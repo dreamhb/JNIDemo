@@ -1,1 +1,1 @@
-# JNIDemo
+# JNIDemo macos version
